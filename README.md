@@ -19,3 +19,5 @@ After cloning this repository you can import the folder as an existing project
 in Adobe Flash Builder. This may not be needed depending on your usage
 scenario. Actually building the library is done by running the ant build
 script in the *build* folder.
+
+Note that you may need to update the *FLEX_HOME* path in the ant build.xml
