@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<project name="HumboldtJSDOM" default="main" basedir="..">
+	<description>Creates an SWC with mappings to the HTML DOM for use in HumboldtJS with ASDoc embedded.</description>
+
+	<property name="FLEX_HOME" location="/Applications/Adobe Flash Builder 4.5/sdks/4.5.0"/>
+		
+	<target name="main" depends="clean, compile, doc" description="Clean build of HumboldtJSDOM.swc">
+	</target>
+
+	<target name="clean" depends="clean-temp-docs">
+		<echo>${FLEX_HOME}</echo>
+		<delete failonerror="false">
+			<fileset dir="${basedir}/bin">
+				<include name="${ant.project.name}.swc"/>
+			</fileset>
+		</delete>
+	</target>
+
+	<target name="compile" depends="" description="Compile HumboldtJSDOM.swc">
+		
+		<echo message="Compiling ${ant.project.name}.swc"/>
+		
+		<compc fork="true" output="${basedir}/bin/${ant.project.name}.swc">
+		    <source-path path-element="${basedir}/src"/>
+		    <include-sources dir="${basedir}/src" includes="**/*.as **/*.mxml"/>
+		</compc>
+		
+	</target>
+
+	<target name="doc" depends="clean-temp-docs, compile" description="Updates HumboldtJSDOM.swc with ASDoc XML">
+
+		<echo message="Compiling ASDoc for ${ant.project.name}.swc"/>
+		
+		<!-- Call asdoc to generate dita xml files -->
+		<asdoc output="${basedir}/tempDoc" lenient="true" failonerror="true" keep-xml="true" skip-xsl="true" fork="true">
+		    <compiler.source-path path-element="${basedir}/src"/>
+			<doc-sources path-element="${basedir}/src"/>
+		</asdoc>
+		
+		<!-- updates HumboldtJSDOM.swc with asdoc xml -->
+		<zip destfile="${basedir}/bin/${ant.project.name}.swc" update="true">
+		    <zipfileset dir="${basedir}/tempDoc/tempdita" prefix="docs">
+			    <include name="*.*"/>
+				<exclude name="ASDoc_Config.xml"/>
+				<exclude name="overviews.xml"/>
+		    </zipfileset>
+		</zip>
+	</target>
+
+	<target name="clean-temp-docs">
+		<delete dir="${basedir}/tempDoc" failonerror="false" includeEmptyDirs="true"/>
+	</target>
+
+</project>
+
+
