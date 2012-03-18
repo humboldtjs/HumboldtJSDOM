@@ -13,6 +13,9 @@ drop that into your project. You can safely ignore the rest of this repository.
 The rest is only needed if you want to change the default DOM bindings or
 improve on them.
 
+Unless you want to do these things you are probably better off starting with
+the HumboldJSEmpty project, so check that out first.
+
 ## How to build it?
 
 After cloning this repository you can import the folder as an existing project
