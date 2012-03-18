@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><apiPackage id="dom.domobjects.display"><apiName>dom.domobjects.display</apiName><apiDetail/><apiClassifier id="dom.domobjects.display:DisplayObject"><apiName>DisplayObject</apiName><shortdesc/><prolog><asMetadata/></prolog><apiClassifierDetail><apiClassifierDef><apiAccess value="public"/><apiStatic/><apiBaseClassifier>dom.domobjects:HTMLElement</apiBaseClassifier></apiClassifierDef></apiClassifierDetail><apiValue id="dom.domobjects.display:DisplayObject:align:get"><apiName>align</apiName><shortdesc>
+		 The alignment of an image.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The alignment of an image.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="dom.domobjects.display:DisplayObject:border:get"><apiName>border</apiName><shortdesc>
+		 The border thickness of an image.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc>
+		 The border thickness of an image.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="dom.domobjects.display:DisplayObject:hspace:get"><apiName>hspace</apiName><shortdesc>
+		 The hspace attribute of an image.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/></apiValueDef><apiDesc>
+		 The hspace attribute of an image.
+		 </apiDesc></apiValueDetail></apiValue><apiValue id="dom.domobjects.display:DisplayObject:useMap:get"><apiName>useMap</apiName><shortdesc> The id of an imagemap to use for an image.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="String"/></apiValueDef><apiDesc> The id of an imagemap to use for an image. </apiDesc></apiValueDetail></apiValue><apiValue id="dom.domobjects.display:DisplayObject:vspace:get"><apiName>vspace</apiName><shortdesc>
+		 The vspace attribute of an image.</shortdesc><prolog/><apiValueDetail><apiValueDef><apiProperty/><apiAccess value="public"/><apiDynamic/><apiValueAccess value="readwrite"/><apiType value="int"/></apiValueDef><apiDesc>
+		 The vspace attribute of an image.
+		 </apiDesc></apiValueDetail></apiValue></apiClassifier></apiPackage>
