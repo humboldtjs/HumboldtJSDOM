@@ -11,7 +11,7 @@ package dom
     import dom.domobjects.EventFunction;
 
     /**
-	 * Load an application module containing a set of ASJS classes. This makes it
+	 * Load an application module containing a set of HumboldtJS classes. This makes it
 	 * possible to load parts of the application on demand (e.g. only when an HTML
 	 * fallback is to be displayed).
 	 * 
