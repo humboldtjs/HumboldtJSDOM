@@ -82,5 +82,10 @@ package dom.domobjects
 		public function get layerX():int { return 0 }
 		/** Not in IE: Returns the vertical coordinate of the mouse pointer relative to the element when an event was triggered. Use offsetY for IE. */
 		public function get layerY():int { return 0 }
+		
+		/**
+		 * The initEvent method is used to initialize the value of an event created using document.createEvent.
+		 */
+		public function initEvent():void { }
 	}
 }
