@@ -109,8 +109,10 @@ package dom.domobjects
 		public function get scrollHeight():int { return 0 }
 		/** W3C: Returns the distance between the actual left edge of an element and its left edge currently in view. */
 		public function get scrollLeft():int { return 0 }
+		public function set scrollLeft(value:int):void {}
 		/** W3C: Returns the distance between the actual top edge of an element and its top edge currently in view. */
 		public function get scrollTop():int { return 0 }
+		public function set scrollTop(value:int):void {}
 		/** W3C: Returns the entire width of an element (including areas hidden with scrollbars). */
 		public function get scrollWidth():int { return 0 }
 		/** W3C: Returns the style attribute of an element. */
