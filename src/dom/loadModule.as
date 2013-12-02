@@ -8,8 +8,6 @@
 */
 package dom
 {
-    import dom.domobjects.EventFunction;
-
     /**
 	 * Load an application module containing a set of HumboldtJS classes. This makes it
 	 * possible to load parts of the application on demand (e.g. only when an HTML
@@ -21,5 +19,5 @@ package dom
 	 * all queued classes have been loaded (should check with hasModule to see if
 	 * everything is actually ready).
 	 */
-	public function loadModule(aModuleName:String, aCallback:EventFunction):void {}
+	public function loadModule(aModuleName:String, aCallback:Function):void {}
 }
