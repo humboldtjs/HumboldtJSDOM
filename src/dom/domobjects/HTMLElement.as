@@ -40,7 +40,7 @@ package dom.domobjects
 		/** W3C: Returns the first child of an element. */
 		public function get firstChild():HTMLElement { return null }
 		/** W3C: Sets or returns the height attribute of an element. */
-		public function get height():Number { return null }
+		public function get height():Number { return 0 }
 		public function set height(value:Number):void {}
 		/** W3C: Sets or returns the id of an element. */
 		public function get id():String { return null }
@@ -126,7 +126,7 @@ package dom.domobjects
 		public function get title():String { return null }
 		public function set title(value:String):void {}
 		/** W3C: Sets or returns the width attribute of an element. */
-		public function get width():Number { return null }
+		public function get width():Number { return 0 }
 		public function set width(value:Number):void {}
 
 		// HTMLElement Object Methods
