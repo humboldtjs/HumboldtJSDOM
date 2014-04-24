@@ -124,6 +124,11 @@ package dom.domobjects
 		public function createComment(comment:String):Comment { return null }
 		/** Creates an empty document fragment. The result is a temporary container for creating and modifying new elements or attributes before introducing the final result to your document tree. This is a very useful method when you're performing multiple operations that add to or modify the document tree. Instead of directly modifying the document tree each time (very inefficient), it's much better to use a temporary "whiteboard" that is created by createDocumentFragment() to perform all your operations on first before finally inserting the result to the document tree. */
 		public function createDocumentFragment():HTMLElement { return null }
+		
+		/**
+		 * Creates an event of the type specified. The returned object should be first initialized and can then be passed to element.dispatchEvent.
+		 */
+		public function createEvent():Event { return null; }
 
 		/** An error occurs when loading a document or an image. */
 		public function get onerror():Function { return null }
